@@ -37,6 +37,9 @@ int main() {
       leftMotor.stop();      
       
     }
+    if(Inertial16.heading(degrees) > 80){
+      rightMotor.stop();
+    }
     std::cout<<Inertial16.heading(degrees);
     std::cout<<" ";
   } 
